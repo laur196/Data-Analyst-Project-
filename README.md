@@ -16,3 +16,8 @@ The main objective of this analysis is to identify the key questions, such as;
 ## Data Structure 
 This Dataset contains important metrics such as impression, clicks and conversion rates from November 2023 to April 2024. 
  
+	Factmedia: This is the main fact table that contains media advertising rates of impressions, clicks, conversion, revenue, cost and profit. It also contains location rows that represent names of regions and countries.
+
+Metrics calculated for the table are; conversion rates(Total clicks /Total conversion),Conversion efficiency(Total conversion/Total cost), Click-through rate(Total click/Total impression,0),cost per click(Total cost/Total clicks) and revenue per click(Total revenue/Total clicks).
+
+	DimDate: The table contains column with day, weeks, months, month year and year.
