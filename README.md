@@ -21,3 +21,18 @@ This Dataset contains important metrics such as impression, clicks and conversio
 Metrics calculated for the table are; conversion rates(Total clicks /Total conversion),Conversion efficiency(Total conversion/Total cost), Click-through rate(Total click/Total impression,0),cost per click(Total cost/Total clicks) and revenue per click(Total revenue/Total clicks).
 
 	DimDate: The table contains column with day, weeks, months, month year and year.
+
+<a href="https://github.com/laur196/Media-advertising-performance-optimization-November-2023--April-2024-/blob/main/Untitled%20(1).png"> Media Data Struture</a>
+
+## Technical Details 
+This project used Power BI for all stages of data cleaning and analysis, with a focus to address inefficient performance across media campaign from November 2023 to April 2024.
+
+## Skills & Function Used 
+Skills: Format, Calculate, Aggregate Function(Sum, Divide, AVERAGEX)
+
+## Steps Overview:
+
+Initial Inspection: Checked all source tables (DimDate, Factmedia) for missing values, duplicate entries and inconsistent data types.
+Cleaning & Standardization: Converted Types.
+
+Calculated Metrics: Conversion Rate, Conversion efficiency, Profit margin, Click-through rate, Cost per click and Revenue per click.
