@@ -67,3 +67,28 @@ let
     #"Inserted Month Year" = Table.AddColumn(#"Inserted Month Name", "Month Year", each Text.Combine({[Month Name], " ", Text.From([Year], "en-US")}), type text)
 in
     #"Inserted Month Year"
+
+## Executive Summary
+
+With a total revenue of $552M generated across the six major platforms in 6months, the media campaign team identified performance inefficiency and increased cost issues that threaten sustainable profitability. The operation team witnessed an increase in expenses compared to 15.75% revenue growth which indicates extra cost that requires intervention and platform performance which requires strategic budget distribution.
+
+Instagram generated the highest revenue with $148.8M but delivered a low profit margins of 59.16% while Twitter achieves highest margins by 72.71% with lower volume. Conversion rates did good across all platforms but Twitter and Facebook demonstrated the highest conversion efficiency with a conversion rate of 802.0% and 787.5% respectively. 
+
+The media campaign team needs to strengthen market presence from top performing countries to the less performed countries in other to boost sales through strategic marketing and promotions.
+
+## Key Insights
+The analysis reveals notable successes and opportunities across various platform;
+•	Based on volume: Facebook and Instagram platforms contributed the most in terms of volume. Instagram led with 153.3M impressions, followed by Facebook with 95.6M impressions. In terms of conversions, Instagram led the way with 4.2M conversions, followed by Facebook with 3.6M conversions.
+•	Based on value: Instagram and Facebook were the top-contributing platforms. Instagram generated the most revenue at $148.7M and the highest profit at $88M. Facebook followed with $126.9M in revenue and $86.7M in profit.
+Though, Google Ads and LinkedIn also performed well, with profits of $75.4M and $45.9M, respectively. Twitter and Website had the lowest profit margins and overall profit, with Website generating the least profit at $12.9M.
+•	Return on Investment (ROI): Twitter platform delivered the highest profit margin, a key indicator of ROI, at 72.71%. Google Ads and Facebook also showed strong performance with profit margins of 66.11% and 68.30% respectively. Twitter and Facebook demonstrated the highest conversion efficiency, both with a conversion rate of 802.0% and 787.5% respectively. Facebook also had a strong click-through rate of 30.01%.
+
+## Recommendation 
+Based on this analysis, here are my recommendations;
+
+	Which platform contribute the most in terms of volume and value through November 2023- April 2024?
+Given the high revenue and profit from Facebook and Instagram, Continue to invest in them as they are the primary drivers of financial results and consider allocating more resources to these platforms to maximize return of investment.
+
+	Which platform delivered the highest return on investment and conversion efficiency ?
+Consider increasing the budget for Twitter  and expanding campaigns to capitalize on its high return on investment.
+
