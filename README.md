@@ -36,3 +36,34 @@ Initial Inspection: Checked all source tables (DimDate, Factmedia) for missing v
 Cleaning & Standardization: Converted Types.
 
 Calculated Metrics: Conversion Rate, Conversion efficiency, Profit margin, Click-through rate, Cost per click and Revenue per click.
+
+## Data Cleaning Actions
+Here are the key cleaning operation;
+	Converted Types
+Purpose: Converted the cost row data type from whole number to decimal number for accurate analysis.
+
+## Date Table Details 
+The date was inserted into this StartDate and the last day was inserted as the EndDate and this helped to create a date table which contains day, weeks, month, month year, Quarter year, year. 
+
+Steps Details 
+The date table was created through this method;
+let 
+// Create parameter 
+    StartDate = List.Min(FACT_MEDIA[Date]),
+    EndDate = #date(2024,4,30),
+    Step = Duration.Days(EndDate - StartDate)+1, 
+// Create the List of date
+    Source = List.Dates(StartDate,Step, #duration(1,0,0,0)), 
+    #"Converted to Table" = Table.FromList(Source, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    #"Changed Type" = Table.TransformColumnTypes(#"Converted to Table",{{"Column1", type date}}),
+    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1", "Date"}}),
+// Create additional columns 
+    #"Inserted Year" = Table.AddColumn(#"Renamed Columns", "Year", each Date.Year([Date]), Int64.Type),
+    #"Inserted Quarter" = Table.AddColumn(#"Inserted Year", "Quarter", each Date.QuarterOfYear([Date]), Int64.Type),
+    #"Inserted Merged Column" = Table.AddColumn(#"Inserted Quarter", "Year quarter", each Text.Combine({Text.From([Year], "en-US"), "/Q", Text.From([Quarter], "en-US")}), type text),
+    #"Inserted Quarter Year" = Table.AddColumn(#"Inserted Merged Column", "Quarter Year", each Text.Combine({"Q", Text.From([Quarter], "en-US"), " ", Text.From([Year], "en-US")}), type text), 
+    #"Inserted Month" = Table.AddColumn(#"Inserted Quarter Year", "Month", each Date.Month([Date]), Int64.Type),
+    #"Inserted Month Name" = Table.AddColumn(#"Inserted Month", "Month Name", each Text.Start(Date.MonthName([Date]),3), type text),
+    #"Inserted Month Year" = Table.AddColumn(#"Inserted Month Name", "Month Year", each Text.Combine({[Month Name], " ", Text.From([Year], "en-US")}), type text)
+in
+    #"Inserted Month Year"
