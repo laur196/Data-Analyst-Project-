@@ -22,7 +22,7 @@ Metrics calculated for the table are; conversion rates(Total clicks /Total conve
 
 	DimDate: The table contains column with day, weeks, months, month year and year.
 
-<a href="https://github.com/laur196/Media-advertising-performance-optimization-November-2023--April-2024-/blob/main/Untitled%20(1).png"> Media Data Struture</a>
+![Media data structure](https://github.com/laur196/Media-advertising-performance-optimization-November-2023--April-2024-/blob/main/Untitled%20(1).png)
 
 ## Technical Details 
 This project used Power BI for all stages of data cleaning and analysis, with a focus to address inefficient performance across media campaign from November 2023 to April 2024.
