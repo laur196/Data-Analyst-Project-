@@ -96,7 +96,6 @@ Given the high revenue and profit from Facebook and Instagram, Continue to inves
 	Which platform delivered the highest return on investment and conversion efficiency ?
 Consider increasing the budget for Twitter  and expanding campaigns to capitalize on its high return on investment.
 
-![Media Dashboard](https://github.com/laur196/Data-Analyst-Project-/blob/main/Media%20advertising%20performance%20optimization.JPG)
+![Media Dashboard](https://github.com/laur196/Data-Analyst-Project-/blob/main/Media%20advertising%20performance%20optimization%201.JPG)
 
-
-![Media Dashbord](https://github.com/laur196/Data-Analyst-Project-/blob/main/Media%20advertising%20performance%20optimization%201.JPG)
+![Media Dashbord](https://github.com/laur196/Data-Analyst-Project-/blob/main/Media%20advertising%20performance%20optimization.JPG)
